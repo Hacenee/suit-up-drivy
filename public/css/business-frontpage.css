@@ -8,6 +8,8 @@ body {
     padding-top: 50px; 
 	width : 1000px;
 	background-image:url(../highway.png);
+	
+	
 	/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
@@ -35,14 +37,17 @@ body {
 
 footer {
     margin: 50px 0;
+	background-color : #ccc;
+	position:absolute;
+	
 }
 
 button{
-color : orange ;
-background-color : blue ;
-width : 100px ;
-
-height : 100px ; 
+	padding : 8px 16px;
+	display:inline-block;
+	text-decoration: none;
+	border-radius : 3px;
+	background-color : #ccc
 	
 	
 }

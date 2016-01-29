@@ -54,8 +54,7 @@
     <!-- Note: The background image is set within the business-casual.css file. -->
     <header class="business-header" style="background-color:lightgrey;" >
     <img src="Logo_Drivy.png"  width="500" height="150" alt="drivy" title="DRIVY" />
-	<img src="car.png"  width="250" height="150" alt="drivy" title="DRIVY" />
-   <img src="audi.png"  width="310" height="155" alt="drivy" title="DRIVY" />
+
 		<div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -88,7 +87,32 @@
         <!-- /.row -->
 </div>
       <button id="compute">LET'S GO ;)</button>
-    <div id="actors"></div>
+ <!--   <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+
+      --!>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<footer>
+<div id="actors"></div>
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
         <div class="actor">
@@ -105,15 +129,6 @@
       
 
     </div>
-    <!-- /.container -->
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-<footer>
-
 </footer>
 	
 	
