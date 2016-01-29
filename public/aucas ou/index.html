@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS/HTML Workshop with Drivy</title>
+	 <meta charset="utf-8" />
+		<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+         <script src="//storage.googleapis.com/code.getmdl.io/1.0.1/material.min.js"></script>
+		 
+  </head>
+  <body style="background-color:lightgrey;">
+  
+  <H1 > DRIVY <H1>
+   
+   
+   <img src="car.png"  width="500" height="300" alt="drivy" title="DRIVY" />
+   <img src="audi.png"  width="620" height="310" alt="drivy" title="DRIVY" />
+   
+   <div id = "choice" class="content-grid mdl-grid">
+    <div id="car" class="mdl-cell mdl-cell--6-col" >
+    <H3> Car informations <H3>
+  <input class="model" type="text" placeholder="Car model"/>
+      <input class="price-by-day" type="number" placeholder="Price by day"/>
+      <input class="price-by-km" type="number" placeholder="Price by km"/>
+    </div>
+    <div id="rental" class="mdl-cell mdl-cell--6-col" >
+	<H3 > Rentals parameters<H3>
+      <input class="begin" type="date" placeholder="Rental begin date"/>
+      <input class="end" type="date" placeholder="Rental end date"/>
+      <input class="distance" type="number" placeholder="Distance in km"/>
+      <input class="option" type="checkbox" placeholder="Deductible option"/>
+    </div>
+   </div>
+
+   <button id="compute">Compute</button>
+    <div id="actors"></div>
+    <script id="template" type="x-tmpl-mustache">
+      {{#actors}}
+        <div class="actor">
+          <span>{{who}}</span>
+          <span>{{type}}</span>
+          <span>{{amount}}</span>
+        </div>
+      {{/actors}}
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.1/mustache.min.js"></script>
+    <script src="drivy.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
